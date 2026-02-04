@@ -1,0 +1,55 @@
+{
+  "class": "7",
+  "subjects": {
+    "Math": [
+      {
+        "topic": "Integers - Introduction",
+        "url": "https://www.youtube.com/watch?v=AF31lWJJSgg",
+        "segments": [
+          { "title": "What are Integers?", "start": "00:00", "end": "01:40" },
+          { "title": "Examples", "start": "01:40", "end": "04:00" }
+        ]
+      },
+      {
+        "topic": "Fractions and Decimals",
+        "url": "https://www.youtube.com/watch?v=0vuHnTWs-VY&list=PL5aQFo5utHdeLxfJ6G_gAJpJ999RHha11",
+        "segments": [
+          { "title": "Fractions Intro", "start": "00:00", "end": "02:00" },
+          { "title": "Decimals Intro", "start": "02:00", "end": "05:00" }
+        ]
+      },
+      {
+        "topic": "Simple Equations",
+        "url": "https://www.youtube.com/watch?v=DxrmJOqUVjQ&list=PL5aQFo5utHdcfl9dtkeDGbKk96HXWjUFO",
+        "segments": [
+          { "title": "What is an equation?", "start": "00:00", "end": "02:10" }
+        ]
+      }
+    ],
+    "Science": [
+      {
+        "topic": "Nutrition in Plants",
+        "url": "https://www.youtube.com/watch?v=HodWVUw2lt4",
+        "segments": [
+          { "title": "Photosynthesis", "start": "00:00", "end": "03:00" }
+        ]
+      },
+      {
+        "topic": "Acids, Bases and Salts",
+        "url": "https://www.youtube.com/watch?v=mEz2_43cWCY",
+        "segments": [
+          { "title": "Acids & Bases", "start": "00:00", "end": "02:10" }
+        ]
+      }
+    ],
+    "English": [
+      {
+        "topic": "Parts of Speech - Nouns",
+        "url": "https://www.youtube.com/watch?v=bIHPWr-pf-k",
+        "segments": [
+          { "title": "Noun Definition", "start": "00:00", "end": "01:50" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "class": "7",
+  "subjects": {
+    "Math": [
+      {
+        "topic": "Integers - Introduction",
+        "url": "https://www.khanacademy.org/math/ncert-class-7/x2e0188ae427d64b7:integers-ncert-new",
+        "segments": [
+          { "title": "What are Integers?", "start": "00:00", "end": "01:40" },
+          { "title": "Examples", "start": "01:40", "end": "04:00" }
+        ]
+      },
+      {
+        "topic": "Fractions and Decimals",
+        "url": "https://www.khanacademy.org/math/ncert-class-7/x2e0188ae427d64b7:fractions-decimals-ncert",
+        "segments": [
+          { "title": "Fractions", "start": "00:00", "end": "02:30" },
+          { "title": "Decimals", "start": "02:30", "end": "05:00" }
+        ]
+      },
+      {
+        "topic": "The Triangle and Its Properties",
+        "url": "https://www.khanacademy.org/math/ncert-class-7/x2e0188ae427d64b7:the-triangle-and-its-properties-ncert-new",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "01:50" },
+          { "title": "Triangle Inequality", "start": "01:50", "end": "04:30" },
+          { "title": "Examples", "start": "04:30", "end": "07:00" }
+        ]
+      },
+      {
+        "topic": "Simple Equations",
+        "url": "https://www.khanacademy.org/math/ncert-class-7/x2e0188ae427d64b7:simple-equations-ncert",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "02:10" },
+          { "title": "Solving Examples", "start": "02:10", "end": "05:00" }
+        ]
+      },
+      {
+        "topic": "Ratio and Proportion",
+        "url": "https://www.khanacademy.org/math/ncert-class-7/x2e0188ae427d64b7:ratios-proportion-ncert",
+        "segments": [
+          { "title": "Ratios", "start": "00:00", "end": "01:50" },
+          { "title": "Proportions", "start": "01:50", "end": "04:20" }
+        ]
+      },
+      {
+        "topic": "Percentage",
+        "url": "https://www.khanacademy.org/math/ncert-class-7/x2e0188ae427d64b7:percentage-ncert",
+        "segments": [
+          { "title": "Definition", "start": "00:00", "end": "01:30" },
+          { "title": "Examples", "start": "01:30", "end": "03:50" }
+        ]
+      }
+    ],
+
+    "Science": [
+      {
+        "topic": "Nutrition in Plants",
+        "url": "https://www.khanacademy.org/science/nutrition-in-plants",
+        "segments": [
+          { "title": "Photosynthesis", "start": "00:00", "end": "03:00" },
+          { "title": "Nutrition Types", "start": "03:00", "end": "05:20" }
+        ]
+      },
+      {
+        "topic": "Nutrition in Animals",
+        "url": "https://www.khanacademy.org/science/nutrition-in-animals",
+        "segments": [
+          { "title": "Digestive System", "start": "00:00", "end": "03:10" },
+          { "title": "Nutrition Types", "start": "03:10", "end": "06:00" }
+        ]
+      },
+      {
+        "topic": "Fibre to Fabric",
+        "url": "https://www.khanacademy.org/science/fibre-to-fabric",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "02:00" },
+          { "title": "Examples", "start": "02:00", "end": "05:00" }
+        ]
+      },
+      {
+        "topic": "Acids, Bases and Salts",
+        "url": "https://www.khanacademy.org/science/acids-bases-salts",
+        "segments": [
+          { "title": "Acids", "start": "00:00", "end": "02:10" },
+          { "title": "Bases", "start": "02:10", "end": "04:30" },
+          { "title": "Salts", "start": "04:30", "end": "06:20" }
+        ]
+      },
+      {
+        "topic": "Physical and Chemical Changes",
+        "url": "https://www.khanacademy.org/science/physical-chemical-changes",
+        "segments": [
+          { "title": "Physical Changes", "start": "00:00", "end": "02:30" },
+          { "title": "Chemical Changes", "start": "02:30", "end": "05:00" }
+        ]
+      }
+    ],
+
+    "English": [
+      {
+        "topic": "Parts of Speech - Nouns",
+        "url": "https://www.khanacademy.org/humanities/grammar/parts-of-speech-the-noun",
+        "segments": [
+          { "title": "What is a Noun?", "start": "00:00", "end": "01:50" },
+          { "title": "Types of Nouns", "start": "01:50", "end": "04:00" }
+        ]
+      },
+      {
+        "topic": "Parts of Speech - Pronouns",
+        "url": "https://www.khanacademy.org/humanities/grammar/parts-of-speech-the-pronoun",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "01:30" },
+          { "title": "Examples", "start": "01:30", "end": "03:40" }
+        ]
+      },
+      {
+        "topic": "Tenses - Introduction",
+        "url": "https://www.khanacademy.org/humanities/grammar/verb-tenses",
+        "segments": [
+          { "title": "Past, Present, Future", "start": "00:00", "end": "02:00" },
+          { "title": "Examples", "start": "02:00", "end": "04:30" }
+        ]
+      },
+      {
+        "topic": "Sentence Formation",
+        "url": "https://www.khanacademy.org/humanities/grammar/syntax-sentences",
+        "segments": [
+          { "title": "Simple Sentences", "start": "00:00", "end": "01:50" },
+          { "title": "Compound Sentences", "start": "01:50", "end": "04:00" }
+        ]
+      }
+    ]
+  }
+}

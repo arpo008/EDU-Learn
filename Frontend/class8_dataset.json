@@ -1,0 +1,133 @@
+{
+  "class": "8",
+  "subjects": {
+    "Math": [
+      {
+        "topic": "Rational Numbers",
+        "url": "https://www.khanacademy.org/math/ncert-class-8/rational-numbers",
+        "segments": [
+          { "title": "Definition of Rational Numbers", "start": "00:00", "end": "01:50" },
+          { "title": "Examples", "start": "01:50", "end": "04:00" }
+        ]
+      },
+      {
+        "topic": "Linear Equations in One Variable",
+        "url": "https://www.khanacademy.org/math/ncert-class-8/linear-equations",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "01:40" },
+          { "title": "Solving Examples", "start": "01:40", "end": "04:20" }
+        ]
+      },
+      {
+        "topic": "Squares and Square Roots",
+        "url": "https://www.khanacademy.org/math/ncert-class-8/squares-and-square-roots",
+        "segments": [
+          { "title": "Square Numbers", "start": "00:00", "end": "02:00" },
+          { "title": "Square Roots", "start": "02:00", "end": "04:10" }
+        ]
+      },
+      {
+        "topic": "Cubes and Cube Roots",
+        "url": "https://www.khanacademy.org/math/ncert-class-8/cubes-and-cube-roots",
+        "segments": [
+          { "title": "Cubes", "start": "00:00", "end": "01:50" },
+          { "title": "Cube Roots", "start": "01:50", "end": "04:00" }
+        ]
+      },
+      {
+        "topic": "Comparing Quantities",
+        "url": "https://www.khanacademy.org/math/ncert-class-8/comparing-quantities",
+        "segments": [
+          { "title": "Ratios & Percent", "start": "00:00", "end": "02:20" },
+          { "title": "Profit & Loss", "start": "02:20", "end": "05:00" }
+        ]
+      }
+    ],
+
+    "Science": [
+      {
+        "topic": "Crop Production and Management",
+        "url": "https://www.khanacademy.org/science/crop-production",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "01:50" },
+          { "title": "Crop Practices", "start": "01:50", "end": "04:10" }
+        ]
+      },
+      {
+        "topic": "Microorganisms",
+        "url": "https://www.khanacademy.org/science/microorganisms",
+        "segments": [
+          { "title": "Types of Microorganisms", "start": "00:00", "end": "02:00" },
+          { "title": "Useful & Harmful Microbes", "start": "02:00", "end": "05:00" }
+        ]
+      },
+      {
+        "topic": "Synthetic Fibres and Plastics",
+        "url": "https://www.khanacademy.org/science/synthetic-fibres",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "02:10" },
+          { "title": "Examples", "start": "02:10", "end": "05:00" }
+        ]
+      },
+      {
+        "topic": "Metals and Non-metals",
+        "url": "https://www.khanacademy.org/science/metals-nonmetals",
+        "segments": [
+          { "title": "Properties", "start": "00:00", "end": "02:00" },
+          { "title": "Examples", "start": "02:00", "end": "04:50" }
+        ]
+      },
+      {
+        "topic": "Chemical Reactions",
+        "url": "https://www.khanacademy.org/science/chemical-reactions",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "02:20" },
+          { "title": "Types & Examples", "start": "02:20", "end": "05:10" }
+        ]
+      }
+    ],
+
+    "English": [
+      {
+        "topic": "Active and Passive Voice",
+        "url": "https://www.khanacademy.org/humanities/grammar/active-passive-voice",
+        "segments": [
+          { "title": "Active Voice", "start": "00:00", "end": "01:50" },
+          { "title": "Passive Voice", "start": "01:50", "end": "04:00" }
+        ]
+      },
+      {
+        "topic": "Direct and Indirect Speech",
+        "url": "https://www.khanacademy.org/humanities/grammar/direct-indirect-speech",
+        "segments": [
+          { "title": "Direct Speech", "start": "00:00", "end": "02:00" },
+          { "title": "Indirect Speech", "start": "02:00", "end": "04:10" }
+        ]
+      },
+      {
+        "topic": "Clauses and Phrases",
+        "url": "https://www.khanacademy.org/humanities/grammar/clauses-phrases",
+        "segments": [
+          { "title": "Clauses", "start": "00:00", "end": "02:10" },
+          { "title": "Phrases", "start": "02:10", "end": "04:30" }
+        ]
+      },
+      {
+        "topic": "Sentence Transformation",
+        "url": "https://www.khanacademy.org/humanities/grammar/sentence-transformation",
+        "segments": [
+          { "title": "Simple to Complex", "start": "00:00", "end": "02:00" },
+          { "title": "Examples", "start": "02:00", "end": "04:20" }
+        ]
+      },
+      {
+        "topic": "Punctuation Rules",
+        "url": "https://www.khanacademy.org/humanities/grammar/punctuation",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "01:50" },
+          { "title": "Examples", "start": "01:50", "end": "04:00" }
+        ]
+      }
+    ]
+  }
+}

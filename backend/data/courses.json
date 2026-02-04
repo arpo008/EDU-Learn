@@ -1,0 +1,260 @@
+{
+  "class_6": [
+    {
+      "id": 601,
+      "subject": "Math",
+      "title": "Knowing Our Numbers",
+      "video_id": "e_k9y6k_7kQ",
+      "description": "Learn about comparing numbers and large numbers.",
+      "quiz": [
+        {
+          "question": "Which is the smallest 4-digit number?",
+          "options": ["1000", "9999", "0001", "1001"],
+          "answer": "1000"
+        },
+        {
+          "question": "Which symbol is used for 'greater than'?",
+          "options": [">", "<", "=", "#"],
+          "answer": ">"
+        },
+        {
+          "question": "What is the successor of 99?",
+          "options": ["98", "100", "101", "90"],
+          "answer": "100"
+        }
+      ]
+    },
+    {
+      "id": 602,
+      "subject": "Math",
+      "title": "Whole Numbers",
+      "video_id": "NnKa-s2HwPw",
+      "description": "Introduction to whole numbers and number line.",
+      "quiz": [
+        {
+          "question": "What is the smallest whole number?",
+          "options": ["1", "0", "-1", "10"],
+          "answer": "0"
+        },
+        {
+          "question": "Are all natural numbers whole numbers?",
+          "options": ["Yes", "No", "Only even ones", "Only odd ones"],
+          "answer": "Yes"
+        }
+      ]
+    },
+    {
+      "id": 603,
+      "subject": "Science",
+      "title": "Components of Food",
+      "video_id": "Nf8d_JjR1sM",
+      "description": "Understand nutrients like carbohydrates, proteins, and fats.",
+      "quiz": [
+        {
+          "question": "Which nutrient provides energy to the body?",
+          "options": ["Vitamins", "Carbohydrates", "Minerals", "Water"],
+          "answer": "Carbohydrates"
+        },
+        {
+          "question": "Which vitamin helps in keeping our eyes healthy?",
+          "options": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin B"],
+          "answer": "Vitamin A"
+        }
+      ]
+    },
+    {
+      "id": 604,
+      "subject": "English",
+      "title": "Sentences",
+      "video_id": "0WJR5Qt9-2U",
+      "description": "Learn about sentence structure and types.",
+      "quiz": [
+        {
+          "question": "A sentence must always start with a ______.",
+          "options": ["Capital Letter", "Small Letter", "Number", "Symbol"],
+          "answer": "Capital Letter"
+        },
+        {
+          "question": "Which mark is used at the end of an interrogative sentence?",
+          "options": [".", "!", "?", ","],
+          "answer": "?"
+        }
+      ]
+    }
+  ],
+  "class_7": [
+    {
+      "id": 701,
+      "subject": "Math",
+      "title": "Integers - Introduction",
+      "video_id": "AF31lWJJSgg",
+      "description": "Understanding positive and negative numbers.",
+      "quiz": [
+        {
+          "question": "What is the sum of -5 and +3?",
+          "options": ["-2", "-8", "2", "8"],
+          "answer": "-2"
+        },
+        {
+          "question": "Zero is a ______ integer.",
+          "options": ["Positive", "Negative", "Neutral", "None of these"],
+          "answer": "Neutral"
+        }
+      ]
+    },
+    {
+      "id": 702,
+      "subject": "Math",
+      "title": "Fractions and Decimals",
+      "video_id": "0vuHnTWs-VY",
+      "description": "Introduction to fractions and decimal calculations.",
+      "quiz": [
+        {
+          "question": "What is 1/2 written as a decimal?",
+          "options": ["0.2", "0.5", "0.1", "0.05"],
+          "answer": "0.5"
+        },
+        {
+          "question": "In the fraction 3/4, '3' is called the ______.",
+          "options": ["Denominator", "Numerator", "Quotient", "Remainder"],
+          "answer": "Numerator"
+        }
+      ]
+    },
+    {
+      "id": 703,
+      "subject": "Science",
+      "title": "Nutrition in Plants",
+      "video_id": "HodWVUw2lt4",
+      "description": "How plants prepare their own food via photosynthesis.",
+      "quiz": [
+        {
+          "question": "The process by which plants make food is called ______.",
+          "options": ["Respiration", "Digestion", "Photosynthesis", "Transpiration"],
+          "answer": "Photosynthesis"
+        },
+        {
+          "question": "Which gas is released during photosynthesis?",
+          "options": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+          "answer": "Oxygen"
+        }
+      ]
+    },
+    {
+      "id": 704,
+      "subject": "Science",
+      "title": "Acids, Bases and Salts",
+      "video_id": "mEz2_43cWCY",
+      "description": "Introduction to chemical nature of substances.",
+      "quiz": [
+        {
+          "question": "What is the taste of acids?",
+          "options": ["Sour", "Bitter", "Sweet", "Salty"],
+          "answer": "Sour"
+        },
+        {
+          "question": "Litmus paper turns ______ in acid.",
+          "options": ["Blue", "Red", "Green", "Yellow"],
+          "answer": "Red"
+        }
+      ]
+    },
+    {
+      "id": 705,
+      "subject": "English",
+      "title": "Parts of Speech - Nouns",
+      "video_id": "bIHPWr-pf-k",
+      "description": "Learn about different types of nouns.",
+      "quiz": [
+        {
+          "question": "Which of these is a Proper Noun?",
+          "options": ["London", "City", "Boy", "Country"],
+          "answer": "London"
+        },
+        {
+          "question": "'Team' is an example of which type of noun?",
+          "options": ["Collective", "Abstract", "Common", "Proper"],
+          "answer": "Collective"
+        }
+      ]
+    }
+  ],
+  "class_8": [
+    {
+      "id": 801,
+      "subject": "Math",
+      "title": "Rational Numbers",
+      "video_id": "KLW5OfV2MzQ",
+      "description": "Properties and operations on rational numbers.",
+      "quiz": [
+        {
+          "question": "A number in the form p/q where q is not 0 is called ______.",
+          "options": ["Integer", "Rational Number", "Whole Number", "Natural Number"],
+          "answer": "Rational Number"
+        },
+        {
+          "question": "What is the additive identity for rational numbers?",
+          "options": ["1", "0", "-1", "None"],
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "id": 802,
+      "subject": "Math",
+      "title": "Linear Equations",
+      "video_id": "SDzy5eZpKVU",
+      "description": "Solving equations in one variable.",
+      "quiz": [
+        {
+          "question": "In the equation 2x + 3 = 7, what is the variable?",
+          "options": ["2", "3", "7", "x"],
+          "answer": "x"
+        },
+        {
+          "question": "Solve for x: x - 5 = 10",
+          "options": ["5", "10", "15", "0"],
+          "answer": "15"
+        }
+      ]
+    },
+    {
+      "id": 803,
+      "subject": "Science",
+      "title": "Crop Production",
+      "video_id": "OuKf3EedXyk",
+      "description": "Steps involved in agriculture and crop management.",
+      "quiz": [
+        {
+          "question": "The first step before growing crops is ______.",
+          "options": ["Sowing", "Preparation of soil", "Irrigation", "Harvesting"],
+          "answer": "Preparation of soil"
+        },
+        {
+          "question": "Which tool is used for ploughing?",
+          "options": ["Plough", "Sickle", "Axe", "Hammer"],
+          "answer": "Plough"
+        }
+      ]
+    },
+    {
+      "id": 804,
+      "subject": "English",
+      "title": "Tenses - Past Present Future",
+      "video_id": "YIRuUF7V76E",
+      "description": "Understanding time reference in grammar.",
+      "quiz": [
+        {
+          "question": "Identify the tense: 'She walks to school.'",
+          "options": ["Simple Past", "Simple Present", "Future Continuous", "Past Perfect"],
+          "answer": "Simple Present"
+        },
+        {
+          "question": "Which is the correct past form of 'Go'?",
+          "options": ["Goed", "Gone", "Went", "Going"],
+          "answer": "Went"
+        }
+      ]
+    }
+  ]
+}
