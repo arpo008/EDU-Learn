@@ -1,0 +1,108 @@
+{
+  "class6": {
+    "Math": [
+      {
+        "topic": "Whole Numbers",
+        "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:understanding-whole-numbers/v/whole-numbers-introduction",
+        "segments": [
+          { "title": "Definition of Whole Numbers", "start": "00:00", "end": "01:20" },
+          { "title": "Examples", "start": "01:20", "end": "03:00" }
+        ]
+      },
+      {
+        "topic": "Factors and Multiples",
+        "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:factors-multiples/v/factors-and-multiples",
+        "segments": [
+          { "title": "Definition", "start": "00:00", "end": "01:15" },
+          { "title": "Examples", "start": "01:15", "end": "04:00" }
+        ]
+      }
+    ],
+    "Science": [
+      {
+        "topic": "Living and Non-living Things",
+        "url": "https://www.khanacademy.org/science/biology/intro-to-biology/v/biology-overview",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "02:00" },
+          { "title": "Living vs Non-living", "start": "02:00", "end": "04:30" }
+        ]
+      }
+    ],
+    "English": [
+      {
+        "topic": "Parts of Speech – Introduction",
+        "url": "https://www.khanacademy.org/humanities/grammar/parts-of-speech-the-basics/v/introduction-to-grammar",
+        "segments": [
+          { "title": "Overview", "start": "00:00", "end": "01:40" },
+          { "title": "Examples", "start": "01:40", "end": "03:20" }
+        ]
+      }
+    ]
+  },
+
+  "class7": {
+    "Math": [
+      {
+        "topic": "Integers - Introduction",
+        "url": "https://www.khanacademy.org/math/ncert-class-7/x2e0188ae427d64b7:integers-ncert-new",
+        "segments": [
+          { "title": "What are Integers?", "start": "00:00", "end": "01:40" },
+          { "title": "Examples", "start": "01:40", "end": "04:00" }
+        ]
+      }
+    ],
+    "Science": [
+      {
+        "topic": "Nutrition in Plants",
+        "url": "https://www.khanacademy.org/science/nutrition-in-plants",
+        "segments": [
+          { "title": "Photosynthesis", "start": "00:00", "end": "03:00" },
+          { "title": "Nutrition Types", "start": "03:00", "end": "05:20" }
+        ]
+      }
+    ],
+    "English": [
+      {
+        "topic": "Parts of Speech - Nouns",
+        "url": "https://www.khanacademy.org/humanities/grammar/parts-of-speech-the-noun",
+        "segments": [
+          { "title": "What is a Noun?", "start": "00:00", "end": "01:50" },
+          { "title": "Types of Nouns", "start": "01:50", "end": "04:00" }
+        ]
+      }
+    ]
+  },
+
+  "class8": {
+    "Math": [
+      {
+        "topic": "Rational Numbers",
+        "url": "https://www.khanacademy.org/math/ncert-class-8/rational-numbers",
+        "segments": [
+          { "title": "Definition of Rational Numbers", "start": "00:00", "end": "01:50" },
+          { "title": "Examples", "start": "01:50", "end": "04:00" }
+        ]
+      }
+    ],
+    "Science": [
+      {
+        "topic": "Crop Production and Management",
+        "url": "https://www.khanacademy.org/science/crop-production",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "01:50" },
+          { "title": "Crop Practices", "start": "01:50", "end": "04:10" }
+        ]
+      }
+    ],
+    "English": [
+      {
+        "topic": "Active and Passive Voice",
+        "url": "https://www.khanacademy.org/humanities/grammar/active-passive-voice",
+        "segments": [
+          { "title": "Active Voice", "start": "00:00", "end": "01:50" },
+          { "title": "Passive Voice", "start": "01:50", "end": "04:00" }
+        ]
+      }
+    ]
+  }
+}

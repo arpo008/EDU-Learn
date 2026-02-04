@@ -1,0 +1,39 @@
+{
+  "class": "8",
+  "subjects": {
+    "Math": [
+      {
+        "topic": "Rational Numbers",
+        "url": "https://www.youtube.com/watch?v=KLW5OfV2MzQ",
+        "segments": [
+          { "title": "Introduction", "start": "00:00", "end": "02:00" }
+        ]
+      },
+      {
+        "topic": "Linear Equations",
+        "url": "https://www.youtube.com/watch?v=SDzy5eZpKVU&list=PL5yiS3c1AIyXM9je_9GOCW9QDIZOkD6OQ",
+        "segments": [
+          { "title": "Solving Equations", "start": "00:00", "end": "03:00" }
+        ]
+      }
+    ],
+    "Science": [
+      {
+        "topic": "Crop Production",
+        "url": "https://www.youtube.com/watch?v=OuKf3EedXyk",
+        "segments": [
+          { "title": "Agriculture Steps", "start": "00:00", "end": "02:30" }
+        ]
+      }
+    ],
+    "English": [
+      {
+        "topic": "Tenses - Past Present Future",
+        "url": "https://www.youtube.com/watch?v=YIRuUF7V76E",
+        "segments": [
+          { "title": "Overview", "start": "00:00", "end": "02:00" }
+        ]
+      }
+    ]
+  }
+}
