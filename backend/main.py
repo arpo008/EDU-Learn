@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Header, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import os
@@ -6,6 +6,10 @@ import json
 import requests
 from dotenv import load_dotenv
 from pathlib import Path
+
+# --- NEW IMPORTS FOR FIREBASE ---
+import firebase_admin
+from firebase_admin import credentials, auth
 
 # --- SETUP ---
 base_dir = Path(__file__).resolve().parent
@@ -24,10 +28,42 @@ app.add_middleware(
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-# --- DATA LOADING (Robust Logic) ---
+# ======================================================
+# 🔥 FIREBASE ADMIN SETUP (NEW ADDITION)
+# ======================================================
+# আপনার serviceAccountKey.json ফাইলটি main.py এর পাশেই থাকতে হবে
+cred_path = base_dir / "serviceAccountKey"
+
+try:
+    if not firebase_admin._apps: # অ্যাপ যদি আগে ইনিশিলাইজ না হয়ে থাকে
+        if cred_path.exists():
+            cred = credentials.Certificate(str(cred_path))
+            firebase_admin.initialize_app(cred)
+            print("✅ Firebase Admin SDK Initialized!")
+        else:
+            print("⚠️ Warning: 'serviceAccountKey.json' not found. Auth features won't work.")
+except Exception as e:
+    print(f"❌ Firebase Init Error: {e}")
+
+# --- AUTH DEPENDENCY (Verify Token from Frontend) ---
+async def verify_token(authorization: str = Header(None)):
+    if not authorization:
+        raise HTTPException(status_code=401, detail="Authorization header missing")
+    
+    try:
+        # Frontend sends: "Bearer <token>"
+        token = authorization.split("Bearer ")[1]
+        decoded_token = auth.verify_id_token(token)
+        return decoded_token # এতে ইউজারের uid, email সব থাকে
+    except Exception as e:
+        print(f"Auth Error: {e}")
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+
+# ======================================================
+# 📦 EXISTING DATA LOADING (No Changes)
+# ======================================================
 def load_all_data():
     combined_data = {}
-    # তোমার ফোল্ডারে থাকা সব JSON ফাইলগুলোর নাম এখানে দাও
     json_files = ["class7_dataset.json", "class8_dataset.json", "dataset.json"]
     
     for filename in json_files:
@@ -37,16 +73,13 @@ def load_all_data():
                 with open(file_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     
-                    # লজিক ১: যদি ফাইলের ফরম্যাট হয় { "class": "7", "subjects": {...} }
                     if "class" in data and "subjects" in data:
-                        class_key = f"class{data['class']}" # যেমন: class7
-                        # যদি আগে থেকেই এই ক্লাসের ডেটা থাকে, তবে মার্জ করো, নাহলে নতুন বসাও
+                        class_key = f"class{data['class']}"
                         if class_key in combined_data:
                              combined_data[class_key].update(data["subjects"])
                         else:
                              combined_data[class_key] = data["subjects"]
                              
-                    # লজিক ২: যদি ফাইলের ফরম্যাট হয় { "class6": {...}, "class7": {...} } (তোমার dataset.json এর মতো)
                     elif "class6" in data or "class7" in data:
                         combined_data.update(data)
                         
@@ -75,20 +108,35 @@ class SearchQuery(BaseModel):
 def read_root():
     return {"status": "EduLearn Backend Running"}
 
-# --- API: GET CLASS VIDEOS (Enroll Button এর জন্য জরুরি) ---
+# ======================================================
+# 🔒 NEW AUTHENTICATED ROUTE EXAMPLE
+# ======================================================
+@app.get("/auth/me")
+def get_current_user_info(user = Depends(verify_token)):
+    # এই রাউটটি শুধু লগইন করা ইউজাররাই এক্সেস করতে পারবে
+    return {
+        "status": "authenticated",
+        "uid": user['uid'],
+        "email": user.get('email'),
+        "message": "You are verified by Firebase Admin!"
+    }
+
+# ======================================================
+# 🎥 EXISTING API: GET CLASS VIDEOS (No Changes)
+# ======================================================
 @app.get("/get-class-videos")
 def get_class_videos(class_name: str = "class7"):
-    # ছোট হাতের অক্ষরে কনভার্ট করে স্পেস রিমুভ করা ("Class 7" -> "class7")
     formatted_name = class_name.lower().replace(" ", "")
     
     if formatted_name in db:
         return {"status": "success", "data": db[formatted_name]}
     else:
-        # ডিবাগিং এর জন্য প্রিন্ট
         print(f"Requested: {formatted_name}, Available keys: {list(db.keys())}")
         return {"status": "error", "message": "Class not found", "data": {}}
 
-# --- SMART SEARCH API ---
+# ======================================================
+# 🧠 EXISTING SMART SEARCH API (No Changes)
+# ======================================================
 @app.post("/smart-search")
 def smart_search(query: SearchQuery):
     user_q = query.question.lower()
@@ -98,11 +146,9 @@ def smart_search(query: SearchQuery):
     for class_name, subjects in db.items():
         for subject, topics in subjects.items():
             for item in topics:
-                # Main Topic Check
                 if user_q in item['topic'].lower():
                     start_time = 0
                     end_time = 0
-                    # Check segments
                     if 'segments' in item and len(item['segments']) > 0:
                          start_time = time_to_seconds(item['segments'][0]['start'])
                          end_time = time_to_seconds(item['segments'][0]['end'])
@@ -114,7 +160,6 @@ def smart_search(query: SearchQuery):
                         "title": item['topic']
                     }
                 
-                # Segment Check
                 for seg in item.get('segments', []):
                     if user_q in seg['title'].lower():
                         found_video = {

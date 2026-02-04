@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from "react-router-dom";
 import { BookOpen } from "lucide-react";
 
+// ✅ FIX: Path আপডেট করা হয়েছে (তিন ধাপ পেছনে গিয়ে src ফোল্ডারে যাওয়া হচ্ছে)
+import { AuthContext } from "../../../providers/AuthProvider"; 
+
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {})
+            .catch(error => console.log(error));
+    }
     
-    // মেনু আইটেমগুলো
     const navItems = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/course'>Courses</NavLink></li>
-        
-        {/* ক্লাস অনুযায়ী লিংক (অপশনাল, যদি ড্রপডাউন চান) */}
-        {/* <li><NavLink to='/course-details/class6'>Class 6</NavLink></li> */}
-
         <li><NavLink to='/ai'>AI Q&A</NavLink></li>
         <li><NavLink to='/video'>Video</NavLink></li>
         <li><NavLink to='/tutor-ai' className="font-bold text-blue-600">Talk to Tutor 💬</NavLink></li>
@@ -21,7 +26,7 @@ const Navbar = () => {
     </>;
 
     return (
-        <div className="navbar bg-white shadow-2xl sticky top-0 z-50"> {/* sticky added for better UX */}
+        <div className="navbar bg-white shadow-2xl sticky top-0 z-50">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,11 +39,10 @@ const Navbar = () => {
                     </ul>
                 </div>
                 
-                {/* Logo Section */}
                 <Link to="/" className='h-14 items-center flex justify-center gap-2 px-2'>
                      <BookOpen className="w-8 h-8 text-blue-600" />
                      <h1 className='text-2xl font-bold bg-gradient-to-r from-blue-700 via-green-600 to-purple-500 bg-clip-text text-transparent'>
-                        EduLearn
+                       EduLearn
                      </h1>
                 </Link>
             </div>
@@ -49,8 +53,30 @@ const Navbar = () => {
                 </ul>
             </div>
             
-            <div className="navbar-end">
-                <Link to="/login" className="btn bg-blue-600 text-white hover:bg-blue-700 border-none px-6">Login</Link>
+            <div className="navbar-end gap-2">
+                {
+                    user ? (
+                        <>
+                            <div className="tooltip tooltip-bottom" data-tip={user.displayName || user.email}>
+                                <div className="avatar online placeholder cursor-pointer">
+                                    <div className="bg-neutral text-neutral-content rounded-full w-10">
+                                        {user.photoURL ? (
+                                            <img src={user.photoURL} alt="User" />
+                                        ) : (
+                                            <span className="text-xl font-bold">{user?.email ? user.email[0].toUpperCase() : 'U'}</span>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button onClick={handleLogOut} className="btn bg-red-500 hover:bg-red-600 text-white border-none btn-sm">
+                                Logout
+                            </button>
+                        </>
+                    ) : (
+                        <Link to="/login" className="btn bg-blue-600 text-white hover:bg-blue-700 border-none px-6">Login</Link>
+                    )
+                }
             </div>
         </div>
     );

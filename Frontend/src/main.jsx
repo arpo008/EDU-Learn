@@ -1,16 +1,17 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import './index.css'
-import {
-  RouterProvider,
-} from "react-router-dom";
-import { router } from './Roouter/router.jsx';
+import { RouterProvider } from "react-router-dom";
+import { router } from './Roouter/router';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <div className='max-w-7xl mx-auto bg-white'>
-      <RouterProvider router={router} />
-    </div>
-  </StrictMode>
-);
+// ✅ AuthProvider ইমপোর্ট করেছেন তো?
+import AuthProvider from './providers/AuthProvider';
 
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    {/* ✅ এখানে AuthProvider দিয়ে মুড়িয়ে দিতে হবে */}
+    <AuthProvider>
+        <RouterProvider router={router} />
+    </AuthProvider>
+  </React.StrictMode>,
+)

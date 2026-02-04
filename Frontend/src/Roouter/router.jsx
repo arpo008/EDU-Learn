@@ -8,8 +8,13 @@ import Videos from "../Pages/Videos/Videos";
 import AboutSection from "../Pages/AboutSection/AboutSection";
 import ContactFaqSection from "../Pages/Contact/ContactFaqSection";
 import CourseDetails from "../Pages/CourseDetails/CourseDetails";
-// 👇 এই নতুন ইমপোর্টটি মিসিং ছিল
 import TutorChat from "../Pages/Tutor/TutorChat"; 
+
+// ✅ Auth Pages Import
+import Login from "../Pages/Login/Login";    
+import SignUp from "../Pages/SignUp/SignUp"; 
+
+// ✅ Exam Pages Import
 import ExamDashboard from "../Pages/Exam/ExamDashboard";
 import ExamPage from "../Pages/Exam/ExamPage";
 
@@ -38,7 +43,6 @@ export const router = createBrowserRouter([
             path: "video",
             Component: Videos
         },
-        // 👇 এখানে TutorChat ব্যবহার করা হয়েছে, তাই উপরে ইমপোর্ট থাকতে হবে
         {
             path: "tutor-ai",
             Component: TutorChat
@@ -46,6 +50,16 @@ export const router = createBrowserRouter([
         {
             path: "about",
             Component: AboutSection
+        },
+        // ✅ ফিক্সড: Login রাউটে কম্পোনেন্ট বসানো হয়েছে
+        {
+            path: "login",
+            Component: Login
+        },
+        // ✅ ফিক্সড: SignUp রাউটে কম্পোনেন্ট বসানো হয়েছে
+        {
+            path: "signup",
+            Component: SignUp
         },
         {
             path: "contact",
@@ -56,7 +70,7 @@ export const router = createBrowserRouter([
             Component: ExamDashboard
         },
         {
-            path: "exam/:classId", // ডায়নামিক রাউট (যেমন: /exam/class_6)
+            path: "exam/:classId", // ডায়নামিক রাউট
             Component: ExamPage
         }
     ]
