@@ -1,18 +1,4 @@
-# --- Secrets & Environment Variables (Grok API & Firebase) ---
-.env
-.env.local
-.env.*
-serviceAccountKey.json
-*.pem
-# --- Dependencies ---
-node_modules/
-dist/
-build/
-venv/
-env/
-__pycache__/
-*.pyc
-
-# --- OS Generated Files ---
-.DS_Store
-Thumbs.db
+# Backend ignores
+backend/.env
+backend/venv/
+Frontend/firebase.config.js
