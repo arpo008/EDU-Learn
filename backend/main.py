@@ -32,7 +32,7 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 # 🔥 FIREBASE ADMIN SETUP (NEW ADDITION)
 # ======================================================
 # আপনার serviceAccountKey.json ফাইলটি main.py এর পাশেই থাকতে হবে
-cred_path = base_dir / "serviceAccountKey"
+cred_path = base_dir / "serviceAccountKey.json"
 
 try:
     if not firebase_admin._apps: # অ্যাপ যদি আগে ইনিশিলাইজ না হয়ে থাকে
@@ -64,7 +64,7 @@ async def verify_token(authorization: str = Header(None)):
 # ======================================================
 def load_all_data():
     combined_data = {}
-    json_files = ["class7_dataset.json", "class8_dataset.json", "dataset.json"]
+    json_files = ["class6_dataset.json", "class7_dataset.json", "class8_dataset.json", "dataset.json"]
     
     for filename in json_files:
         file_path = base_dir / filename
