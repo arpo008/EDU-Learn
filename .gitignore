@@ -137,6 +137,7 @@ Frontend/node_modules/
 Frontend/.env
 Frontend/dist/
 Frontend/build/
+Frontend/public/*.glb
 
 # Model files (if large)
 *.pkl
